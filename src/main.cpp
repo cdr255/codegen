@@ -2,7 +2,7 @@
 
 int main()
 {
-  std::string hello ("Hello World!\n");
-  std::cout << hello;
+  Field hello("Hello\n");
+  std::cout << hello.output();
   return 0;
 }
