@@ -6,20 +6,22 @@
 class Field {
 private:
   std::string name; 
+  std::string value;
 public: 
-  Field(std::string);
+  Field(std::string, std::string);
   std::string output();
   
 };
 
-Field::Field(std::string n)
+Field::Field(std::string n, std::string v)
 {
   name = n;
+  value = v;
 }
 
 std::string Field::output()
 {
-  return name;
+  return name + value;
 }
 
 #endif
